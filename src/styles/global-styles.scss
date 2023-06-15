@@ -1,0 +1,129 @@
+html {
+  --white:#fff;
+  --titlePrimary:#1C1410;
+  --background:#F1F1F1;
+  --secundary:#E5E5E5;
+  --gray: #E9E9E9;
+  --gray-line:#D0D0D0;
+  --gray-dark-1: #797373;
+  --gray-dark-2:#3D3D3D;
+  --green-light:#04d361;
+  --overlay: rgba(0, 0, 0, 0.823);
+  --text-highlight:#b3b9ff;
+  --red:#CF1317;
+  --darkRed:#9B0A0D;
+}
+
+@font-face {
+  font-family: 'New Atten';
+  src: url('/fonts/atten-new-cufonfonts/AttenNew-Regular.woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'New Atten bold';
+  src: url('/fonts/atten-new-cufonfonts/AttenNewBold.woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'New Atten extraBold';
+  src: url('/fonts/atten-new-cufonfonts/AttenNewExtraBold.woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'New Atten Medium';
+  src: url('/fonts/atten-new-cufonfonts/AttenNewMedium.woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'cinzel regular';
+  src: url('/fonts/cinzel/Cinzel-Regular.woff2');
+  font-display: swap;
+}
+
+.rec.rec-slider-container {
+  overflow: visible;
+}
+
+.rec .rec-arrow {
+  z-index: 3;
+  position: absolute;
+  top: 50%;
+  background-color: transparent;
+  color: var(--white);
+  box-shadow: none;
+
+  &.rec-arrow-left {
+    left: -15px;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background: var(--red);
+    }
+  }
+
+  &.rec-arrow-right {
+    right: -15px;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background: var(--red);
+    }
+  }
+}
+
+.slick-dots {
+  bottom: 15px !important;
+}
+
+.rec .rec-pagination {
+  display: none;
+}
+
+body {
+  scrollbar-width: thin;
+  background-color: var(--background);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #b4b4b4;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #8e8e8e;
+}
+
+.icon {
+  cursor: pointer;
+
+  .filled {
+    display: none;
+  }
+
+  .line {
+    display: inline;
+  }
+
+  &:hover {
+    .filled {
+      display: inline;
+    }
+
+    .line {
+      display: none;
+    }
+  }
+}
