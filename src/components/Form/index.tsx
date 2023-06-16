@@ -5,6 +5,7 @@ import {
   Checkbox,
   FormControlLabel,
   FormGroup,
+  Link,
   Modal,
   Radio,
   RadioGroup,
@@ -40,7 +41,7 @@ export const Form: React.FC = () => {
   const [leadEmail, setLeadEmail] = useState<string>()
   const [leadTel, setLeadTel] = useState<string>()
   const [leadWhatsApp, setLeadWhatsApp] = useState<string>()
-  const [leadEnderecoObra, setLeadEnderecoObra] = useState<string>()
+  const [leadEnderecoObra, setLeadEnderecoObra] = useState<string>('')
   const [ondeConheceu, setOndeConheceu] = useState('')
   const [checkbox1, setCheckbox1] = useState(false)
   const [isValid, setIsValid] = useState(false)
@@ -88,14 +89,7 @@ export const Form: React.FC = () => {
   }
 
   useEffect(() => {
-    if (
-      leadName &&
-      leadEmail &&
-      leadWhatsApp &&
-      leadEnderecoObra &&
-      checkbox1 &&
-      ondeConheceu
-    ) {
+    if (leadName && leadEmail && leadWhatsApp && checkbox1 && ondeConheceu) {
       setIsValid(true)
     } else {
       setIsValid(false)
@@ -229,13 +223,15 @@ export const Form: React.FC = () => {
               Em breve disponibilizaremos em seu e-mail a sua tabela de
               desconto!
             </p>
-            <Button
-              onClick={handleCloseModal}
-              variant="contained"
-              color="success"
-            >
-              Fechar
-            </Button>
+            <Link href={'https://www.instagram.com/grupoaleixo/'}>
+              <Button
+                onClick={handleCloseModal}
+                variant="contained"
+                color="success"
+              >
+                Fechar
+              </Button>
+            </Link>
           </Box>
         </>
       </Modal>

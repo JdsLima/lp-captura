@@ -1,6 +1,6 @@
 import { ReactElement, useState } from 'react'
 import { NextPage } from 'next'
-import { Box, Container, useMediaQuery } from '@mui/material'
+import { Box, Container, Link, useMediaQuery } from '@mui/material'
 import styles from '../styles/pages/home.module.scss'
 import Image from 'next/image'
 import { ShadowTopBar } from '../components/ShadowTopBar'
@@ -53,14 +53,16 @@ const Home: NextPage<HomeProps> = (props: HomeProps) => {
               <Form />
             </Box>
             <Box sx={{ py: 10 }}>
-              <Image
-                src="/images/REDES SOCIAIS.svg"
-                alt="Background"
-                width={252}
-                height={32}
-                quality={100}
-                priority
-              />
+              <Link href={'https://www.instagram.com/grupoaleixo/'}>
+                <Image
+                  src="/images/REDES SOCIAIS.svg"
+                  alt="Background"
+                  width={252}
+                  height={32}
+                  quality={100}
+                  priority
+                />
+              </Link>
             </Box>
           </Container>
         </Box>
