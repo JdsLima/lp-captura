@@ -1,0 +1,54 @@
+.backgroundContainer {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: block;
+    z-index: -1;
+    background: url("../../../public/images/BG.png");
+    background-size: 100% auto;
+    background-position: center;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: grayscale(1);
+
+    .overlay {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.74);
+    }
+}
+
+.presentationContainer {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: transparent;
+
+    .background {
+        position: fixed !important;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        z-index: -999;
+    }
+}
+
+.wrapper {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    z-index: 4;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
