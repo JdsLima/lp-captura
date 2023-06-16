@@ -28,7 +28,7 @@ const Home: NextPage<HomeProps> = (props: HomeProps) => {
                 src="/images/Feira Construa Já Ginco.svg"
                 alt="Background"
                 width={isMobile ? 360 : 552}
-                height={isMobile ? 60 : 134}
+                height={isMobile ? 70 : 134}
                 quality={100}
                 priority
               />
