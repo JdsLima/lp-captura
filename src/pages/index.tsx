@@ -1,13 +1,6 @@
 import { ReactElement, useState } from 'react'
 import { NextPage } from 'next'
-import {
-  Box,
-  Button,
-  Container,
-  Modal,
-  Typography,
-  useMediaQuery
-} from '@mui/material'
+import { Box, Container, useMediaQuery } from '@mui/material'
 import styles from '../styles/pages/home.module.scss'
 import Image from 'next/image'
 import { ShadowTopBar } from '../components/ShadowTopBar'
@@ -34,8 +27,8 @@ const Home: NextPage<HomeProps> = (props: HomeProps) => {
               <Image
                 src="/images/Feira Construa Já Ginco.svg"
                 alt="Background"
-                width={isMobile ? 350 : 552}
-                height={isMobile ? 44 : 134}
+                width={isMobile ? 360 : 552}
+                height={isMobile ? 60 : 134}
                 quality={100}
                 priority
               />
